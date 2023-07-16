@@ -1,0 +1,3 @@
+[submodule "OS-RP/discord-gamesdk-cmake"]
+	path = OS-RP/discord-gamesdk-cmake
+	url = https://github.com/spiroth/discord-gamesdk-cmake.git
