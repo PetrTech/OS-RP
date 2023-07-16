@@ -1,6 +1,8 @@
 # OS-RP
 OS-RP allows you to show details about your OS and current activity on Discord. Functionality is pretty limited so far.
 To build this you need CMake.
+Only Windows is supported for the time being (library linking issues, I suck at linking).
+PRs are welcome.
 
 # Quick explanation of the config system:
 A config file is automatically generated on first run.
