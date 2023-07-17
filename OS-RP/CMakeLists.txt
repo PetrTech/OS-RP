@@ -9,6 +9,8 @@ if (CMAKE_VERSION VERSION_GREATER 3.12)
   set_property(TARGET OS-RP PROPERTY CXX_STANDARD 20)
 endif()
 
+set(CMAKE_CXX_FLAGS  "${CMAKE_CXX_FLAGS} -fsanitize=address  -g") 
+
 # TODO: Add tests and install targets if needed.
 add_subdirectory(discord_gamesdk_cmake)
 

@@ -168,7 +168,9 @@ int main()
 		using namespace std::this_thread;
 		using namespace std::chrono;
 
+#ifdef _WIN32
 		std::signal(SIGINT, handleSignal);
+#endif
 
 		FILE* cfg = cfgFileExists();
 
