@@ -76,22 +76,6 @@ std::string getMacOSVersion() {
 const char* platform = "osrp";
 #endif
 
-std::string getLinuxDistroVersion() {
-    std::ifstream osReleaseFile("/etc/os-release");
-    std::string line;
-    
-    while (std::getline(osReleaseFile, line)) {
-        if (line.find("PRETTY_NAME") != std::string::npos) {
-            size_t start = line.find_first_of("\"");
-            size_t end = line.find_last_of("\"");
-            if (start != std::string::npos && end != std::string::npos)
-                return line.substr(start + 1, end - start - 1);
-        }
-    }
-    
-    return "Unknown";
-}
-
 // Signal handler for SIGINT
 void handleSignal(int signal) {
 	if (signal == SIGINT) {
