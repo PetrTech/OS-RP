@@ -14,6 +14,19 @@ The config system isn't very good, but it works. Here is how you can change it (
 - OS-RP usage time **(-1 Hidden, 0 Display)**
 - Support OSRP [This option allows you to support OS-RP by adding an image and a link to the repository] **(-1 Do not support, 0 Support)**
 
+# Building
+Building for Windows is easy. Just open up Visual Studio and F5 to run (C++ & CMake required).
+
+To build for Linux, you need G++, Make, Ninja and CMake.
+From the root of the project (OS-RP) navigate to the OS-RP folder and run Make there. In the case that doesn't work just do:
+```
+rm -rf OS-RP
+make clean
+cmake ..
+make
+```
+
+
 ![unstable](https://github.com/PetrTech/OS-RP/assets/55279432/203b9eef-02ea-45eb-adeb-27bfdc833dba)
 !!UNFINISHED!!
 ![OSRP](https://github.com/PetrTech/OS-RP/assets/55279432/96a1dc6c-31ed-4ae1-ac11-0e391ddff449)
